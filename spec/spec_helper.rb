@@ -45,19 +45,19 @@ RSpec.configure do |config|
     linux: false
   )
 
-  cleaner = proc do
-    [
-      TMPDIR,
-      SPECDIR.join("support/mybook/output")
-    ].each do |i|
-      FileUtils.rm_rf(i)
-    end
+  # cleaner = proc do
+  #   [
+  #     TMPDIR,
+  #     SPECDIR.join("support/mybook/output")
+  #   ].each do |i|
+  #     FileUtils.rm_rf(i)
+  #   end
 
-    Dir.chdir File.expand_path("..", __dir__)
-  end
+  #   Dir.chdir File.expand_path("..", __dir__)
+  # end
 
-  config.before(&cleaner)
-  config.after(&cleaner)
+  # config.before(&cleaner)
+  # config.after(&cleaner)
   config.before { FileUtils.mkdir_p(TMPDIR) }
 
   config.before do

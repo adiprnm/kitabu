@@ -15,6 +15,7 @@
 - Remove inline alignment from tables.
 - Render `<figure>` for images with title.
 - Render abbreviations with (e.g. `*[CSS]: Cascading Style Sheets`).
+- Ensure correct numerical sorting of TOC when chapters exceed 9
 
 ## v3.1.0
 
